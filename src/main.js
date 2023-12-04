@@ -19,7 +19,7 @@ async function run() {
     core.info(
       `The event payload: ${JSON.stringify(github.context.payload, null, 2)}`
     )
-    const testVar = "sfgfgdgdfg"
+    const testVar = 'sfgfgdgdfg'
     core.exportVariable('HELLO', testVar)
   } catch (error) {
     // Fail the workflow step if an error occurs
