@@ -23,3 +23,5 @@ jobs:
         uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: ${{ inputs.who-to-greet }}
+      - name: test
+        run: echo "$HELLO"
