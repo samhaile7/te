@@ -24,4 +24,4 @@ jobs:
         with:
           who-to-greet: ${{ inputs.who-to-greet }}
       - name: test
-        run: echo "$HELLO"
+        run: echo $HELLO
