@@ -28505,6 +28505,7 @@ async function run() {
     const masked = testVar[0]
     console.log(masked, 'pre')
     core.setSecret(masked)
+
     console.log(masked, 'post')
 
     core.exportVariable('TF_VAR_HELLO', masked)
