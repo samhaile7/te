@@ -2,12 +2,12 @@ name: Example Workflow
 
 on:
   push:
-    inputs:
-      who-to-greet:
-        description: Who to greet in the log
-        required: true
-        default: 'World'
-        type: string
+    # inputs:
+    #   who-to-greet:
+    #     description: Who to greet in the log
+    #     required: true
+    #     default: 'World'
+    #     type: string
 
 jobs:
   say-hello:
@@ -24,6 +24,6 @@ jobs:
         id: print-to-log
         uses: ./
         with:
-          who-to-greet: ${{ inputs.who-to-greet }}
+          who-to-greet: 'twsdfsdf'
       - name: test
         run: echo "$HELLO"
