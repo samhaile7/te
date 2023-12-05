@@ -28502,9 +28502,12 @@ async function run() {
     testVar.push(env)
     console.log(testVar[0], '0')
     console.log(testVar[1], '1')
-    core.setSecret(global)
-    console.log(testVar, 'testvar')
-    core.exportVariable('TF_VAR_HELLO', global)
+    const masked = testVar[0]
+    console.log(masked, 'pre')
+    core.setSecret(masked)
+    console.log(masked, 'post')
+
+    core.exportVariable('TF_VAR_HELLO', masked)
   } catch (error) {
     // Fail the workflow step if an error occurs
     core.setFailed(error.message)
