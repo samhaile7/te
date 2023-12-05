@@ -28495,11 +28495,16 @@ async function run() {
     core.info(
       `The event payload: ${JSON.stringify(github.context.payload, null, 2)}`
     )
-    const testVar = 'AAAAAAA'
-    console.log(testVar, '4444444')
+    const testVar = []
+    const global = { dfg: 'gfd' }
+    const env = { dfgdfg: 'fgdfdg' }
+    testVar.push(global)
+    testVar.push(env)
+    console.log(testVar[0], '0')
+    console.log(testVar[1], '1')
     core.setSecret(testVar)
-    console.log(testVar, '5555555555')
-    core.exportVariable('TF_VAR_HELLO', testVar)
+    console.log(testVar, 'testvar')
+    core.exportVariable('TF_VAR_HELLO', testVar[0])
   } catch (error) {
     // Fail the workflow step if an error occurs
     core.setFailed(error.message)

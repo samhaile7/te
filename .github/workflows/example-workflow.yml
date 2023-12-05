@@ -26,12 +26,12 @@ jobs:
         with:
           who-to-greet: 'twsdfsdf'
       - name: test
-        run: echo "$HELLO"
+        run: echo "$TF_VAR_HELLO"
       - run: touch data.txt
 
       - name: test
         run: |
-          echo "$HELLO" > data.txt
+          echo "$TF_VAR_HELLO" > data.txt
           cat data.txt
 
       - uses: actions/upload-artifact@v3
