@@ -28497,18 +28497,18 @@ async function run() {
     )
     const testVar = []
     const global = {
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd',
-      dfg: 'gfd'
+      dfg: 'gftretred',
+      dgf: 'gfd',
+      sg: 'gfd',
+      gdf: 'gfd',
+      dgfg: 'gfd',
+      dfsg: 'gfd',
+      dvfvvg: 'gfd',
+      dvfg: 'gfd',
+      dfvsg: 'gfd',
+      dfvg: 'gfd',
+      dfsfg: 'gfd',
+      dffsdg: 'gfd'
     }
     const env = { dfgdfg: 'fgdfdg' }
     testVar.push(global)
