@@ -39,7 +39,8 @@ async function run() {
     testVar.push(env)
     console.log(testVar[0], '0')
     console.log(testVar[1], '1')
-    const masked = JSON.stringify(testVar[0])
+    // const masked = JSON.stringify(testVar[0])
+    const masked = testVar[0]
     console.log(masked, 'pre')
     core.setSecret(masked)
 
