@@ -28518,11 +28518,11 @@ async function run() {
     // const masked = JSON.stringify(testVar[0])
     const masked = testVar[0]
     console.log(masked, 'pre')
-    core.setSecret(testVar)
+    core.setSecret(masked)
 
     console.log(masked, 'post')
 
-    core.exportVariable('TF_VAR_HELLO', testVar[0])
+    core.exportVariable('TF_VAR_HELLO', masked)
   } catch (error) {
     // Fail the workflow step if an error occurs
     core.setFailed(error.message)
