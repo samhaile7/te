@@ -20,9 +20,9 @@ async function run() {
       `The event payload: ${JSON.stringify(github.context.payload, null, 2)}`
     )
     const testVar = 'AAAAAAA'
-    console.log(testVar, "4444444")
+    console.log(testVar, '4444444')
     core.setSecret(testVar)
-    console.log(testVar, "5555555555")
+    console.log(testVar, '5555555555')
     core.exportVariable('TF_VAR_HELLO', testVar)
   } catch (error) {
     // Fail the workflow step if an error occurs
