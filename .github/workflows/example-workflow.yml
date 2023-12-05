@@ -38,3 +38,7 @@ jobs:
         with:
           name: my-artifact
           path: ./data.txt
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+      - name: TF init
+        run: terraform init
