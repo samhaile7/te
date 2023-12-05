@@ -20,7 +20,20 @@ async function run() {
       `The event payload: ${JSON.stringify(github.context.payload, null, 2)}`
     )
     const testVar = []
-    const global = { dfg: 'gfd' }
+    const global = {
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd',
+      dfg: 'gfd'
+    }
     const env = { dfgdfg: 'fgdfdg' }
     testVar.push(global)
     testVar.push(env)
